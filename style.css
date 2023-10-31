@@ -1,0 +1,103 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}   
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+}
+
+.order{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.order .text h1{
+    color: var(--Dark-blue);
+    font-size: 1.7rem;
+    margin: 40px auto 30px;
+}
+
+.order .text p{
+    color: var(--Desaturated-blue);
+    width: 70%;
+    margin: auto auto 15px;
+    line-height: 1.7;
+}
+
+.order .text .aduio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    background-color: var(--Very-pale-blue);
+    padding: 20px 25px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+}
+
+.order .text .aduio .icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.order .text .aduio .icon h3{
+    margin: 0;
+    font-weight: 600;
+    color: var(--Dark-blue);
+    font-size: 1.1rem;
+}
+
+.order .text .aduio .icon span{
+    color: var(--Desaturated-blue);
+}
+
+.order .text .aduio a{
+    color: var(--Bright-blue);
+}
+
+.order .text button{
+    width: 80%;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 5px 5px 7px -3px var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.order .text button:hover{
+    opacity: 0.7;
+}
+
+.order .text p{
+    margin: 30px auto;
+}
+
+@media (max-width: 767px) {
+
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+
+    .order{
+        width: 90%;
+        margin: auto;
+    }
+}
